@@ -340,7 +340,8 @@ for name, model in models.items():
         axes2[plot_index].set_title(f'Feature Importances - {name}')
         axes2[plot_index].set_xlabel('Feature')
         axes2[plot_index].set_ylabel('Importance Score')
-        axes2[plot_index].tick_params(axis='x', rotation=45, ha='right') # Rotate labels for better readability
+       axes2[plot_index].tick_params(axis='x', rotation=45)
+        plt.setp(axes2[plot_index].get_xticklabels(), ha="right")
         plot_index += 1
 
 plt.tight_layout()
