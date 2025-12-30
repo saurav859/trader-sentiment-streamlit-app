@@ -22,7 +22,7 @@ def load_data(file_path):
     df = pd.read_csv(file_path)
     return df
 
-df_sentiment = load_data('/content/historical_data.csv')
+df_sentiment = load_data("historical_data.csv.gz")
 st.success("Data loaded successfully from 'historical_data.csv'")
 
 # Display first 5 rows
