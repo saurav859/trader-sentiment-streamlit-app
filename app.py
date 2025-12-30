@@ -1,3 +1,4 @@
+import time
 import io
 import streamlit as st
 import pandas as pd
